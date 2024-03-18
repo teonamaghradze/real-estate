@@ -1,5 +1,6 @@
 import Card from "../../components/card/Card";
 import Filter from "../../components/filter/Filter";
+import Map from "../../components/map/Map";
 import { listData } from "../../data/data";
 import "./List.scss";
 
@@ -17,7 +18,9 @@ function List() {
           ))}
         </div>
       </section>
-      <section className="map"></section>
+      <section className="map">
+        <Map items={data} />
+      </section>
     </div>
   );
 }
